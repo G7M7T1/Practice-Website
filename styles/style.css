@@ -266,3 +266,16 @@ input:checked + .slider::before {
   width: 70%;
   line-height: 2.5rem;
 }
+
+.laps {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  background-image: url("../img/La_Darknesss.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+}
