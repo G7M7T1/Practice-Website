@@ -264,4 +264,5 @@ input:checked + .slider::before {
 
 #about p {
   width: 70%;
+  line-height: 2.5rem;
 }
