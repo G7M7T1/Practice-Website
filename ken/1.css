@@ -82,3 +82,25 @@ footer {
   background-color: chartreuse;
   grid-column: 1 / 4;
 }
+
+.container-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  height: auto;
+}
+
+.photo {
+  background: lightblue;
+  height: 100px;
+  width: 100px;
+}
+
+.card {
+  display: flex;
+  background-color: lemonchiffon;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
