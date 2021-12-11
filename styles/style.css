@@ -271,8 +271,8 @@ input:checked + .slider::before {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 500px;
-  height: 500px;
+  width: 250px;
+  height: 250px;
   background-image: url("../img/La_Darknesss.png");
   background-repeat: no-repeat;
   background-size: cover;

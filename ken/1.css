@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+}
+
+.background-style {
+  background-color: rgb(146, 230, 255);
+  border: 1px dashed silver;
+  width: 700px;
+  height: 700px;
+  margin-top: 2rem;
+  resize: both;
+  overflow: auto;
+}
+
+.text-align {
+  font-size: 1.8rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.item-1 {
+  background-color: lightpink;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 5px;
+  flex: 1 1 150px;
+}
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+.sidebar {
+  background-color: palegoldenrod;
+}
+
+.content {
+  background-color: cadetblue;
+  margin: 0;
+  height: 100%;
+}
+
+.container-3 {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+  background-color: rgb(255, 170, 170);
+  grid-column: 1 / 4;
+}
+
+.left-sidebar {
+  background-color: cyan;
+  grid-column: 1 / 2;
+}
+
+main {
+  background-color: bisque;
+  grid-column: 2 / 3;
+}
+
+.right-sidebar {
+  background-color: chocolate;
+  grid-column: 3 / 4;
+}
+
+footer {
+  background-color: chartreuse;
+  grid-column: 1 / 4;
+}
