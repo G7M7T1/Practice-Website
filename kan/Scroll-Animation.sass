@@ -1,0 +1,37 @@
+*
+    box-sizing: border-box
+
+body
+    background-color: rgb(192, 243, 252)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 0
+    overflow-x: hidden
+
+h1
+    margin: 10px
+
+.box
+    background-color: rgb(78, 119, 255)
+    color: white
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 400px
+    height: 200px
+    margin: 10px
+    border-radius: 10px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8)
+    transform: translateX(500%)
+    transition: transform 0.6s ease
+
+.box:nth-of-type(even)
+    transform: translateX(-500%)
+
+.box.show
+    transform: translateX(0)
+
+.box h2
+    font-size: 45px
