@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #050505;
+}
+
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-30deg);
+          transform: rotateX(-30deg);
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotateX(-30deg) rotateY(0deg);
+            transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-30deg) rotateY(360deg);
+            transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotateX(-30deg) rotateY(0deg);
+            transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-30deg) rotateY(360deg);
+            transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#ec0707));
+  background: linear-gradient(#151515, #ec0707);
+  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+          transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: rgba(80, 0, 0, 0.6);
+  -webkit-transform: rotateX(90deg) translateZ(150px);
+          transform: rotateX(90deg) translateZ(150px);
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: red;
+  -webkit-transform: translateZ(-380px);
+          transform: translateZ(-380px);
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+  -webkit-box-shadow: 0 0 120px rgba(255, 0, 0, 0.2), 0 0 200px rgba(255, 0, 0, 0.4), 0 0 300px rgba(255, 0, 0, 0.6), 0 0 400px rgba(255, 0, 0, 0.8), 0 0 500px red;
+          box-shadow: 0 0 120px rgba(255, 0, 0, 0.2), 0 0 200px rgba(255, 0, 0, 0.4), 0 0 300px rgba(255, 0, 0, 0.6), 0 0 400px rgba(255, 0, 0, 0.8), 0 0 500px red;
+}
+/*# sourceMappingURL=3D-box.css.map */
