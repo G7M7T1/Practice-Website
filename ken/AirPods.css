@@ -1,1 +1,295 @@
-/* No CSS *//*# sourceMappingURL=AirPods.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #1D1D1F;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fixed-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #111;
+  opacity: 0.95;
+}
+
+.nav {
+  text-align: center;
+  margin: 0 2rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-logo {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+.nav-btn {
+  color: #fff;
+  border-radius: 1rem;
+  padding: .35rem 1rem;
+  background-color: #0071E3;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.home {
+  margin-top: 3rem;
+  background-color: #FAFAFA;
+  height: 900px;
+  padding-bottom: 3rem;
+}
+
+.home-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-data {
+  padding-top: 3.5rem;
+  text-align: center;
+  margin: 0 2rem;
+}
+
+.home-title, .details .data-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.home-description, .details .data-description {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.home-description sup, .details .data-description sup {
+  position: relative;
+  top: -0.5rem;
+  font-size: 0.6rem;
+  vertical-align: baseline;
+}
+
+.home-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5rem;
+}
+
+.home-img img {
+  width: 150px;
+  height: 350px;
+  margin: 0 1rem;
+}
+
+.airpod1 {
+  -webkit-animation: airpod1 3s infinite;
+          animation: airpod1 3s infinite;
+}
+
+@-webkit-keyframes airpod1 {
+  50% {
+    -webkit-transform: translateY(-6%);
+            transform: translateY(-6%);
+  }
+}
+
+@keyframes airpod1 {
+  50% {
+    -webkit-transform: translateY(-6%);
+            transform: translateY(-6%);
+  }
+}
+
+.airpod2 {
+  -webkit-animation: airpod2 3s infinite;
+          animation: airpod2 3s infinite;
+}
+
+@-webkit-keyframes airpod2 {
+  50% {
+    -webkit-transform: translateY(6%);
+            transform: translateY(6%);
+  }
+}
+
+@keyframes airpod2 {
+  50% {
+    -webkit-transform: translateY(6%);
+            transform: translateY(6%);
+  }
+}
+
+.details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr min-content min-content;
+      grid-template-rows: 1fr -webkit-min-content -webkit-min-content;
+      grid-template-rows: 1fr min-content min-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 10rem;
+  font-weight: 300;
+}
+
+.details-data {
+  text-align: center;
+  margin: 0 2rem;
+}
+
+.details-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3rem;
+}
+
+.details-box {
+  text-align: center;
+  margin: 0 0;
+}
+
+.details-initial {
+  font-size: 0.75rem;
+}
+
+.details-title {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.details-title span {
+  font-size: 1.5rem;
+}
+
+.details-description {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.details-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 10rem;
+}
+
+.details-img img {
+  width: 218px;
+}
+
+.airpods {
+  -webkit-animation: airpods 3s infinite;
+          animation: airpods 3s infinite;
+}
+
+@-webkit-keyframes airpods {
+  50% {
+    -webkit-transform: translateY(-6%);
+            transform: translateY(-6%);
+  }
+}
+
+@keyframes airpods {
+  50% {
+    -webkit-transform: translateY(-6%);
+            transform: translateY(-6%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    margin-left: auto;
+  }
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-item {
+    margin-right: 1.5rem;
+  }
+  .home {
+    height: 1600px;
+  }
+  .home-data {
+    padding-top: 10rem;
+  }
+  .home-title, .details .data-title {
+    font-weight: 500;
+  }
+  .home-description, .details .data-description {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  .home-img img {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    width: 450px;
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=AirPods.css.map */

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$header-height: 3rem;
+
+$body-font: 'Roboto',
+sans-serif;
+$first-text-color: #1D1D1F;
+$second-text-color: #0071E3;
+$black-color: #111;
+$white-color: #fff;
+$first-body-background: white;
+$second--body-background: #FAFAFA;
+
+// fonts weight
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+// font size
+$biggest-font: 2.5rem;
+$bigger-font: 2.25rem;
+$big-font: 1.5rem;
+$normal-font: 1.25rem;
+$smaller-font-size: .75rem;
+
+@media screen and (min-width: 768px) {
+    $biggest-font: 3.5rem;
+    $bigger-font: 3rem;
+    $big-font: 1.5rem;
+    $normal-font: 1rem;
+    $smaller-font-size: .9rem;
+}
+
+
+
+// z-index
+$z-back: -10;
+$z-normal: 1;
+$z-fixed: 10;
+
+@mixin text-margin($margin) {
+    text-align: center;
+    margin: 0 $margin;
+}
+
+@mixin margin-center($margin) {
+    max-width: 1200px;
+    margin: 0 $margin;
+}
+
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: $first-text-color;
+    font-family: $body-font;
+    background-color: $first-body-background;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $black-color;
+    opacity: 0.95;
+}
+
+.nav {
+    @include text-margin(2rem);
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+        color: $white-color;
+        font-weight: $font-light;
+        font-size: $big-font;
+    }
+
+    &-menu {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &-btn {
+        color: $white-color;
+        border-radius: 1rem;
+        padding: .35rem 1rem;
+        background-color: $second-text-color;
+    }
+
+    &-link {
+        color: $white-color;
+    }
+}
+
+.home {
+    margin-top: $header-height;
+    background-color: $second--body-background;
+    height: 900px;
+    padding-bottom: 3rem;
+
+    &-content {
+        @include margin-center(auto);
+    }
+
+    &-data {
+        padding-top: 3.5rem;
+        @include text-margin(2rem);
+    }
+
+    &-title {
+        font-size: $biggest-font;
+        font-weight: $font-regular;
+    }
+
+    &-description {
+        font-size: $normal-font;
+        font-weight: $font-regular;
+
+        sup {
+            position: relative;
+            top: -0.5rem;
+            font-size: 0.6rem;
+            vertical-align: baseline;
+        }
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+
+        & img {
+            width: 150px;
+            height: 350px;
+            margin: 0 1rem;
+        }
+    }
+}
+
+// animation here
+.airpod1 {
+    animation: airpod1 3s infinite;
+
+    @keyframes airpod1 {
+        50% {
+            transform: translateY(-6%);
+        }
+    }
+}
+
+.airpod2 {
+    animation: airpod2 3s infinite;
+
+    @keyframes airpod2 {
+        50% {
+            transform: translateY(6%);
+        }
+    }
+}
+
+.details {
+    display: grid;
+    grid-template-rows: 1fr min-content min-content;
+    align-items: center;
+    justify-content: center;
+    @include margin-center(auto);
+
+    padding-top: 10rem;
+    font-weight: $font-light;
+
+    &-data {
+        @include text-margin(2rem);
+    }
+
+    .data-title {
+        @extend .home-title;
+    }
+
+    .data-description {
+        @extend .home-description;
+    }
+
+    &-content {
+        display: flex;
+        column-gap: 3rem;
+        justify-content: center;
+
+        padding-top: 3rem;
+    }
+
+    &-box {
+        @include text-margin(0);
+    }
+
+    &-initial {
+        font-size: $smaller-font-size;
+    }
+
+    &-title {
+        font-size: $bigger-font;
+        font-weight: $font-light;
+
+        & span {
+            font-size: $big-font;
+        }
+    }
+
+    &-description {
+        font-size: $smaller-font-size;
+        line-height: 1rem;
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+
+        padding-top: 2.5rem;
+        padding-bottom: 10rem;
+
+        & img {
+            width: 218px;
+        }
+    }
+}
+
+.airpods {
+    animation: airpods 3s infinite;
+
+    @keyframes airpods {
+        50% {
+            transform: translateY(-6%);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+
+        &-menu {
+            margin-left: auto;
+        }
+
+        &-list {
+            display: flex;
+        }
+
+        &-item {
+            margin-right: 1.5rem;
+        }
+    }
+
+    .home {
+        height: 1600px;
+
+        &-data {
+            padding-top: 10rem;
+        }
+
+        &-title {
+            font-weight: $font-medium;
+        }
+
+        &-description {
+            font-size: $normal-font;
+            font-weight: $font-light;
+            line-height: 2rem;
+        }
+
+        &-img {
+            & img {
+                object-fit: scale-down;
+                width: 450px;
+                height: 900px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav {
+        @include margin-center(auto);
+    }
+}
