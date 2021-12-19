@@ -1,0 +1,34 @@
+:root {
+    --radius: 40px;
+    --mouse-x: 0;
+    --mouse-y: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url("../img/Followicon/polygon-100s-1084px.svg");
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+
+#ball {
+    width: var(--radius);
+    height: var(--radius);
+    border-radius: 50%;
+    background-color: cadetblue;
+    transform: translate(calc(var(--mouse-x) * 1px), calc(var(--mouse-y) * 1px));
+    transition: all 0.05s;
+}
