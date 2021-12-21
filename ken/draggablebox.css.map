@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,GAAG;CAAG;;AAC5B,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,MAAM;CAAG",
+    "sources": [
+        "draggablebox.sass"
+    ],
+    "names": [],
+    "file": "draggablebox.css"
+}

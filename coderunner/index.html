@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="G7M7T1" />
+    <meta name="description" content="Code Runner by G7M7T1" />
+    <meta name="robots" content="index,follow" />
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../Jquery-ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../Jquery-ui/jquery-ui.css" />
+    <title>Code Runner</title>
+    <link rel="shortcut icon" href="../logo.png" />
+    <link rel="bookmark" href="../logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="menu">
+      <div class="menu-container">
+        <div id="logo">
+          <img id="logoIcon" src="../img/mylogo2.png" alt="My Logo" />
+        </div>
+        <h3>C<span>O</span>DE <span>Runner</span></h3>
+        <button type="button" name="button" id="runCode" class="button">
+          Run Code
+        </button>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <ul id="accordion">
+      <h3 id="html-code" class="tab">HTML</h3>
+      <div class="code-container">
+        <textarea id="html-code"></textarea>
+      </div>
+
+      <h3 id="css-code" class="tab">CSS</h3>
+      <div class="code-container">
+        <textarea id="css-code"></textarea>
+      </div>
+
+      <h3 id="js-code" class="tab">JavaScript</h3>
+      <div class="code-container">
+        <textarea id="js-code"></textarea>
+      </div>
+    </ul>
+    <div class="nextBar"></div>
+  </body>
+</html>
