@@ -16,12 +16,22 @@ body {
   background-image: url("../img/Followicon/polygon-100s-1084px.svg");
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 main {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
+}
+
+main h1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  top: 30%;
 }
 
 #ball {
