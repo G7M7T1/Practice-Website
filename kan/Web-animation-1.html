@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no" />
+    <title>Animations</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="button">
+      <canvas id="canvas" width="1000" height="500"></canvas>
+    </div>
+    <script src="../js/rive.min.js"></script>
+    <script>
+      const button = document.getElementById("button");
+
+      const r = new rive.Rive({
+        src: "https://cdn.rive.app/animations/vehicles.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        stateMachines: "bumpy",
+        fit: rive.Fit.cover,
+        onLoad: (_) => {
+          const inputs = r.stateMachineInputs("bumpy");
+          const bumpTrigger = inputs.find((i) => i.name === "bump");
+          button.onclick = () => bumpTrigger.fire();
+        },
+      });
+    </script>
+  </body>
+</html>
