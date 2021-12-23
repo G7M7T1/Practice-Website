@@ -91,17 +91,48 @@ textarea {
     width: 100%;
     height: inherit;
     resize: none;
-    background-color: inherit;
+    background-color: rgb(39, 39, 39);
     border: none;
     color: white;
     font-size: 20px;
     outline: none;
 }
 
-.nextBar {
-    background-color: coral;
-    height: 5px;
+// .nextBar {
+//     background-color: coral;
+//     height: 5px;
+//     width: 100%;
+// }
+
+#result-container {
+    background-color: #1d1e22;
     width: 100%;
+}
+
+h2 {
+    width: 100%;
+    height: 30px;
+    background-color: coral;
+    text-align: center;
+    font-weight: bold;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    background-color: white;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes colorchange {
