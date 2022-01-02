@@ -18,6 +18,7 @@ $(".tab").click(function (event) {
     //   .prevAll(".tab")
     //   .animate({ marginLeft: "-170px" }, { duration: 700, queue: false });
 
+
     $(this).next().animate(
       {
         width: "680px",
