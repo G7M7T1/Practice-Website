@@ -280,3 +280,7 @@ input:checked + .slider::before {
   opacity: 1;
   z-index: -1;
 }
+
+#projects p a {
+  line-height: 3rem;
+}
