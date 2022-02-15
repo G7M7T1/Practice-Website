@@ -38,3 +38,8 @@ The last time I saw someone make this kind of website, I thought it was beautifu
 
 [Landing-Page](http://practice.g7m7t1.net/pages/Landing-Page/)</br>
 Saw the ad and suddenly wanted to make one | 看到广告突然想做一个
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+[Animation-1](http://practice.g7m7t1.net/new-style/animation-1/)</br>
+Learning more about animation styles | 尝试学习一些 animation 相关的内容
