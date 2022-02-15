@@ -46,3 +46,6 @@ Learning more about animation styles | Animation-1
 
 [Animation-2](http://practice.g7m7t1.net/new-style/animation-2/)</br>
 Learning more about animation styles | Animation-2
+
+[Parrot](http://practice.g7m7t1.net/new-style/parrot/)</br>
+Learning more about animation styles | Parrot
