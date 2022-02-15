@@ -42,4 +42,7 @@ Saw the ad and suddenly wanted to make one | 看到广告突然想做一个
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 [Animation-1](http://practice.g7m7t1.net/new-style/animation-1/)</br>
-Learning more about animation styles | 尝试学习一些 animation 相关的内容
+Learning more about animation styles | Animation-1
+
+[Animation-2](http://practice.g7m7t1.net/new-style/animation-2/)</br>
+Learning more about animation styles | Animation-2
