@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+  list-style-type: none;
+}
+
+body {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.Main-Title {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.Score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.Score p {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3rem;
+}
+
+.options button {
+  margin: 0 2rem;
+  padding: 1rem 3rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#result {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */

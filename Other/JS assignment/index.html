@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1 class="Main-Title">JS Assignment</h1>
+
+        <section class="QST-1">
+            <h3 class="Qst-Title">
+                1. Show the current date information when a user visits your website.
+            </h3>
+            <div class="Qst-Div" style="flex-direction: row;">
+                <p>Current Time: </p>
+                <p id="DateShower"></p>
+                <p id="TimeShower"></p>
+            </div>
+        </section>
+
+        <section class="QST-2">
+            <h3 class="Qst-Title">
+                2. Create an image, when the mouse moves over the image, the image changes.
+            </h3>
+            <div class="Qst-Div">
+                <div id="Img-Link-1"></div>
+            </div>
+        </section>
+
+        <section class="QST-3">
+            <h3 class="Qst-Title">
+                3. Create a paragraph, and when it's clicked, change the content.
+            </h3>
+            <div class="Qst-Div">
+                <p id="Clickable-Text">
+                    Click me and text will be change
+                </p>
+            </div>
+        </section>
+
+        <section class="QST-4">
+            <h3 class="Qst-Title">
+                4. Press any key on the web page to see an alert box.
+            </h3>
+            <div class="Qst-Div">
+                <p>I will show you in other page, because it will make page can't not press any key</p>
+                <a target="_blank" style="padding-top: 1rem; color: brown;" href="./Question/Question 4.html">Click Enter Question 4 Page</a>
+            </div>
+        </section>
+
+        <section class="QST-5">
+            <h3 class="Qst-Title">
+                5. Create a function to make three changes at the same time to the paragraph: add a background color, change the font family to "Arial", and make the text in the center of the screen.
+            </h3>
+            <p id="Text-Three-Change">I will change if you click, you will see the function on script.js</p>
+            <button id="Button-Three-Change">Click See Change</button>
+        </section>
+
+        <section class="QST-6">
+            <h3 class="Qst-Title">
+                6. Create a function to show the conversion result from 20 degrees Fahrenheit to Celsius using a h1.
+            </h3>
+            <div class="Qst-Div" style="flex-direction: row;">
+                <p>If 20 degrees Fahrenheit to Celsius:</p>
+                <p id="Celsius"></p>
+            </div>
+        </section>
+
+        <section class="QST-7">
+            <h3 class="Qst-Title">
+                7. Create a function to simulate the calculator, which takes two input and output the sum result (+) on the webpage.
+            </h3>
+            <div class="Input-Div">
+                <label for="input-1"></label>
+                <input class="inputNumber" id="input-1" name="input-1" type="number" placeholder="Enter number 1" oninput="num1(this.value)" onchange="num1(this.value)">
+                <p>&nbsp;&nbsp;+&nbsp;&nbsp;</p>
+                <label for="input-2"></label>
+                <input class="inputNumber" id="input-2" name="input-2" type="number" placeholder="Enter number 2" oninput="num2(this.value)" onchange="num2(this.value)">
+                <p>&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p id="Add-Count"></p>
+            </div>
+        </section>
+
+        <section class="QST-8">
+            <h3 class="Qst-Title">
+                8. Create a function that takes 2 inputs (First Name & Last Name), output "Nice to meet you First Name Last Name".
+            </h3>
+
+            <div class="Input-Div">
+                <label for="input-3">First Name &nbsp</label>
+                <input class="inputNumber" id="input-3" name="input-3" type="text" placeholder="First Name" oninput="name1(this.value)" onchange="name1(this.value)">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <label for="input-4">Last Name &nbsp</label>
+                <input class="inputNumber" id="input-4" name="input-4" type="text" placeholder="Last Name" oninput="name2(this.value)" onchange="name2(this.value)">
+            </div>
+            <div>
+                <h3 style="text-align: center; padding-top: 1rem">Nice to meet you <span id="First-Name"></span> <span id="Last-Name"></span></h3>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
